@@ -5,12 +5,18 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.2
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+
+  # Floor ORM
   floor: ^1.4.0
+  floor_annotation: ^1.4.0
+  sqflite: ^2.0.0
+
+  # other
   path_provider: ^2.0.11
   path: ^1.9.1
   cupertino_icons: ^1.0.8
@@ -25,6 +31,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
+  # Floor code generator
   floor_generator: ^1.4.0
   build_runner: ^2.1.2
 
